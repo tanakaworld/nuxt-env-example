@@ -5,6 +5,8 @@
         to="/">Home</nuxt-link></li>
       <li class="SharedHeader__LinkItem"><nuxt-link
         to="/page1">Page1</nuxt-link></li>
+      <li class="SharedHeader__LinkItem"><nuxt-link
+        to="/page2">Page2</nuxt-link></li>
     </ul>
   </header>
 </template>

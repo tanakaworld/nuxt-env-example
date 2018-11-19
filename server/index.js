@@ -7,8 +7,10 @@ const port = process.env.PORT || 3000
 
 // Server side environment
 process.env.API_URL = 'http://test.com'
+process.env.SENTRY_DSN = 'SET_YOUR_DSN'
 
 console.log('[Server Process] process.env.API_URL=', process.env.API_URL)
+console.log('[Server Process] process.env.SENTRY_DSN=', process.env.SENTRY_DSN)
 
 app.set('port', port)
 

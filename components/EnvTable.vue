@@ -16,8 +16,8 @@
         <td>{{ API_URL }}</td>
       </tr>
       <tr>
-        <td>API_URL2</td>
-        <td>{{ API_URL2 }}</td>
+        <td>API_URL_FROM_NUXT_ENV</td>
+        <td>{{ API_URL_FROM_NUXT_ENV }}</td>
       </tr>
       <tr>
         <td>notDefined</td>
@@ -26,6 +26,14 @@
       <tr>
         <td>NOT_DEFINED</td>
         <td>{{ NOT_DEFINED }}</td>
+      </tr>
+      <tr>
+        <td>SENTRY_DSN</td>
+        <td>{{ SENTRY_DSN }}</td>
+      </tr>
+      <tr>
+        <td>SENTRY_DSN_FROM_NUXT_ENV</td>
+        <td>{{ SENTRY_DSN_FROM_NUXT_ENV }}</td>
       </tr>
     </tbody>
   </table>
@@ -38,9 +46,11 @@ export default {
     return {
       apiUrl: process.env.apiUrl,
       API_URL: process.env.API_URL,
-      API_URL2: this.$env.API_URL,
+      API_URL_FROM_NUXT_ENV: this.$env.API_URL,
       notDefined: process.env.notDefined,
-      NOT_DEFINED: process.env.NOT_DEFINED
+      NOT_DEFINED: process.env.NOT_DEFINED,
+      SENTRY_DSN: process.env.SENTRY_DSN,
+      SENTRY_DSN_FROM_NUXT_ENV: this.$env.SENTRY_DSN
     }
   }
 }

@@ -45,7 +45,16 @@ module.exports = {
     [
       'nuxt-env',
       {
-        keys: ['API_URL']
+        keys: ['API_URL', 'SENTRY_DSN']
+      }
+    ],
+    [
+      '@nuxtjs/sentry',
+      {
+        dsn: process.env.SENTRY_DSN,
+        config: {
+          environment: process.env.NODE_ENV
+        }
       }
     ]
   ],
