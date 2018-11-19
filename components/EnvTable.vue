@@ -16,6 +16,10 @@
         <td>{{ API_URL }}</td>
       </tr>
       <tr>
+        <td>API_URL2</td>
+        <td>{{ API_URL2 }}</td>
+      </tr>
+      <tr>
         <td>notDefined</td>
         <td>{{ notDefined }}</td>
       </tr>
@@ -34,6 +38,7 @@ export default {
     return {
       apiUrl: process.env.apiUrl,
       API_URL: process.env.API_URL,
+      API_URL2: this.$env.API_URL,
       notDefined: process.env.notDefined,
       NOT_DEFINED: process.env.NOT_DEFINED
     }
