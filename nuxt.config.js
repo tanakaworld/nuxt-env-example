@@ -3,6 +3,11 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
 
+  env: {
+    apiUrl: process.env.API_URL,
+    notDefined: process.env.NOT_DEFINED
+  },
+
   /*
   ** Headers of the page
   */

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Home</h1>
+    <h1>Page1</h1>
     <RenderedFrom :render-source="renderSource"/>
     <EnvTable/>
   </section>
@@ -8,12 +8,12 @@
 
 <script>
 import EnvTable from '~/components/EnvTable.vue'
-import RenderedFrom from '../components/RenderedFrom'
+import RenderedFrom from '~/components/RenderedFrom.vue'
 
 export default {
   components: {
-    RenderedFrom,
-    EnvTable
+    EnvTable,
+    RenderedFrom
   },
   asyncData() {
     return {

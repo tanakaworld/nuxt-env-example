@@ -1,10 +1,14 @@
-
 const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
 const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || 3000
+
+// Server side environment
+process.env.API_URL = 'http://test.com'
+
+console.log('[Server Process] process.env.API_URL=', process.env.API_URL)
 
 app.set('port', port)
 
